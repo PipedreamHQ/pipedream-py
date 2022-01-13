@@ -1,11 +1,11 @@
 [metadata]
-name = 'pipedreamhq'
-version = '0.0.1'
+name = 'pipedream'
+version = '0.2.0'
 description = 'pipedream.com python library'
 author = 'Giao Phan'
 author_email = 'giao@pipedream.com'
 license = 'MIT'
-url = 'https://github.com/_/pipedreamhq'
+url = 'https://github.com/PipedreamHQ/pipedream-py'
 
 [requires]
 python_version = ['2.7', '3.5', '3.6', 'pypy', 'pypy3']

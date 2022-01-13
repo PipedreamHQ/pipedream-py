@@ -7,7 +7,7 @@ from io import open
 
 from setuptools import find_packages, setup
 
-with open('pipedreamhq/__init__.py', 'r') as f:
+with open('pipedream/__init__.py', 'r') as f:
     for line in f:
         if line.startswith('__version__'):
             version = line.strip().split('=')[1].strip(' \'"')
@@ -21,7 +21,7 @@ with open('README.rst', 'r', encoding='utf-8') as f:
 REQUIRES = []
 
 kwargs = {
-    'name': 'pipedreamhq',
+    'name': 'pipedream',
     'version': version,
     'description': '',
     'long_description': readme,
@@ -29,7 +29,7 @@ kwargs = {
     'author_email': 'giao@pipedream.com',
     'maintainer': 'Giao Phan',
     'maintainer_email': 'giao@pipedream.com',
-    'url': 'https://github.com/_/pipedreamhq',
+    'url': 'https://github.com/PipedreamHQ/pipedream-py',
     'license': 'MIT',
     'classifiers': [
         'Development Status :: 4 - Beta',
