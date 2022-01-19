@@ -1,6 +1,6 @@
 [metadata]
 name = 'pipedream'
-version = '0.2.0'
+version = '0.3.0'
 description = 'pipedream.com python library'
 author = 'Giao Phan'
 author_email = 'giao@pipedream.com'

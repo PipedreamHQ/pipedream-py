@@ -3,7 +3,11 @@ import os
 import json
 import functools
 
-steps = json.loads(os.environ.get("PIPEDREAM_STEPS", "null"))
+try:
+    with open(os.environ.get("PIPEDREAM_STEPS"), "r") as f:
+        steps = json.load(f)
+except:
+    steps = None
 
 
 def export(name, value):
