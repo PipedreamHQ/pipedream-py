@@ -134,10 +134,15 @@ class Timer(PropInterface):
 
 
 def serialize_exception(e, cellId=None):
-    return {
-        "type": type(e).__name__,
+    rv = {
+        "code": type(e).__name__,
         "message": str(e),
         "stack": traceback.format_tb(e.__traceback__),
         "ts": datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc).isoformat(),
         "cellId": cellId
     }
+    try:
+        rv["output"] = e.output.decode("utf-8")
+    except AttributeError:
+        pass
+    return rv
